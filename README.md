@@ -1,2 +1,0 @@
-# TobiasStoewer.github.io
-Webpage
