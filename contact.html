@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tobias Stöwer - UXD</title>
+		
+		<link rel="stylesheet" type="text/css" href="CSS/contactCSS.css">
+		
+		<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400" rel="stylesheet">
+	</head>
+
+	<body>
+		
+		<div class="maingrid">
+		
+			<header>
+				
+				<div class="LogoDiv">
+					<a href="index.html"><img class="logo" src="IMG/Icons/LogoVersion1_light.png" alt="Logo" height="80px" ></a>
+				</div>
+				
+				<div class="NavDiv">
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="uxd.html">UXD</a></li>
+							<li><a href="photography.html">Photography</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+				
+				<div class="introduction">
+				
+					<h1>Contact</h1>
+					<div class="arrow">
+						<a class="js-scroll-button"> <img src="IMG/Icons/Arrow.png" alt="Arrow Down" width="64px"></a>
+					</div>
+				</div>
+			
+			</header>
+			
+			<article id="article">
+				
+				<div class="container">
+				  <form action="mailto:Tobias.Stoewer@gmail.com" enctype="text/plain">
+
+					<label for="fname">First Name</label>
+					<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+					<label for="lname">Last Name</label>
+					<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+					<label for="subject">Subject</label>
+					<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+					<input type="submit" value="Submit">
+
+				  </form>
+				</div>
+			
+			</article>
+			
+			<footer class="footer">
+			
+				<p>&copy; 2018</p>
+			
+			</footer>
+		</div>
+		
+		<script>
+			document.querySelector('.js-scroll-button').addEventListener('click', function(e) {
+        	e.preventDefault();
+        	document.querySelector('.container').scrollIntoView({ behavior: 'smooth' });
+      		});
+		</script>
+	</body>
+</html>

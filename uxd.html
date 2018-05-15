@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tobias Stöwer - UXD</title>
+		
+		<link rel="stylesheet" type="text/css" href="CSS/uxdCSS.css">
+		
+		<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400" rel="stylesheet">
+	</head>
+
+	<body>
+		
+		<div class="maingrid">
+		
+			<header>
+				
+				<div class="LogoDiv">
+					<a href="index.html"><img class="logo" src="IMG/Icons/LogoVersion1_light.png" alt="Logo" height="80px" ></a>
+				</div>
+				
+				<div class="NavDiv">
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="uxd.html">UXD</a></li>
+							<li><a href="photography.html">Photography</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+				
+				<div class="introduction">
+				
+					<h1>User<br>Experience<br>Design<br></h1>
+
+					<div class="arrow">
+						<a class="js-scroll-button"> <img src="IMG/Icons/Arrow.png" alt="Arrow Down" width="64px"></a>
+					</div>
+				
+				</div>
+			
+			</header>
+			
+			<article class="article">
+				<div class="text">
+					<h2>About UXD</h2>
+						<p class="uxdText">I'm studying User Experience Design at the universtiy of applied sciences Ingolstadt (THI), in Bavaria (Germany).<br>
+							Usually people don't really understand what UXD is supposed to mean. So for everyone who is confused about what I’m actually doing, here is a quote from Don Norman who is one of the most important people in my field:</p>
+						
+						<div class="quoteDiv">
+							<img class="quoteMarkTop" src="IMG/Icons/Anführungszeichen Oben.png" alt="&bdquo;" width="19px">
+							<p class="quote">‘User experience’ encompasses all aspects of the end-user’s interaction with the company, its services, and its products. </p>
+							<img class="quoteMarkBottom" src="IMG/Icons/Anführungszeichen Unten.png" alt="&ldquo;" width="19px">
+						</div>
+							
+						<p class="uxdText">In general it’s about setting the user as the centre of the whole development process. Every desicion is done in the interest of the user and the user decides if something is good or bad. That way every product covers everything the enduser needs in the way it's 	needed.<br>
+						For further information check out <a href="https://www.nngroup.com/articles/definition-user-experience/">this article by Don Norman</a> about UX as well as <a href="http://www.helloerik.com/treatise-on-user-experience-design-part-1">this article about UXD</a>.</p>
+				</div>
+				
+				<div class="projectsHeading">
+				
+					<h2>Projects</h2>
+					<p>I've gathered some of my most recent projects here. Have fun looking through them!</p>
+				
+				</div>
+				
+				<div class="projects">
+				
+					<div class="flexcontainer">
+						<img class="imageProject" src="http://via.placeholder.com/300" alt="Project Image">
+						<div class="projectTextRelated">
+							<h3 class="headingProject">Project 1</h3>
+							<p class="categoryDesign">Design</p>
+							<p class="projectText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br>
+							<a class="projectLink" href="#">More about this project</a></p>
+						</div>
+					</div>
+					
+					<div class="flexcontainer">
+						<img class="imageProject" src="http://via.placeholder.com/300" alt="Project Image">
+						<div class="projectTextRelated">
+							<h3 class="headingProject">Project 2</h3>
+							<p class="categoryProgramming">Programming</p>
+							<p class="projectText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br>
+							<a class="projectLink" href="#">More about this project</a></p>
+						</div>
+					</div>
+					
+					<div class="flexcontainer">
+						<img class="imageProject" src="http://via.placeholder.com/300" alt="Project Image">
+						<div class="projectTextRelated">
+							<h3 class="headingProject">Project 3</h3>
+							<p class="categoryDesign">Design</p>
+							<p class="projectText">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br>
+							<a class="projectLink" href="#">More about this project</a></p>
+						</div>
+					</div>
+				
+				</div>
+				<script>
+					document.querySelector('.js-scroll-button').addEventListener('click', function(e) {
+        			e.preventDefault();
+        			document.querySelector('h2').scrollIntoView({ behavior: 'smooth' });
+      				});
+				</script>
+			
+			</article>
+			
+			<footer class="footer">
+			
+				<p>&copy; 2018</p>
+			
+			</footer>
+		</div>
+	</body>
+</html>

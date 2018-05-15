@@ -1,0 +1,327 @@
+@charset 'UTF-8';
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 200;
+	color: white;
+}
+
+/* Grid related conent */
+
+.maingrid{
+	display: grid;
+	grid-template-columns: repeat(1, 1 fr);
+	grid-template-rows: repeat(3, 1 fr);
+	grid-template-areas: 
+		"header"
+		"article"
+		"footer";
+}
+
+header{
+	grid-area: header;
+	display: grid;
+	grid-template-columns: repeat(1, 1 fr);
+	grid-template-rows: repeat(3, 1 fr);
+	grid-template-areas: 
+		"logo" 
+		"nav"
+		"intro";
+	padding: 1em;
+	background-image: url(../IMG/Backgrounds/50.jpg);
+	background-size: cover;
+}
+
+.LogoDiv{
+	grid-area: logo;
+	align-self: center;
+	text-align: center;
+	padding-right: 50px;
+}
+
+.navDiv{
+	grid-area: nav;
+}
+
+.introduction{
+	grid-area: intro;
+	text-align: center;
+}
+
+article{
+	grid-area: article;
+	display: grid;
+	grid-template-columns: repeat(1, 1 fr);
+	grid-template-rows: repeat(3, 1 fr);
+	grid-template-areas: 
+		"descText"
+		"projectsHeading"
+		"projects";
+	
+	align-content: center;
+	background: linear-gradient(135deg, #FFFFFF, #D3FAFF);
+	background-size: cover;
+}
+
+.text{
+	grid-area: descText;
+}
+
+.projectsHeading{
+	grid-area: projectsHeading;
+}
+
+.projects{
+	grid-area: projects;
+}
+
+footer{
+	grid-area: footer;
+	background: linear-gradient(135deg, #3D3D3D, #1E1E1E);
+	text-align: center;
+	padding: 20px;
+}
+
+
+
+/* None Grid Related Content */
+
+nav{
+	text-align: center;
+	font-size: 1.2em;
+	padding: 2em 2em 0 2em;
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+nav ul li{
+	display: block;
+	padding: 0.5em;
+}
+
+a{
+	text-decoration: none;
+	background-color: transparent;
+}
+
+nav ul li a:link {
+    color: white;  
+}
+
+nav ul li a:hover {
+    color: rgba(229,229,229,1.00);
+}
+
+nav ul li a:active {
+    color: rgba(168,168,168,1.00);
+}
+
+
+h1{
+	font-size: 5vw;
+	font-weight: 200;
+	padding-top: 2.5em;
+	padding-bottom: 1em;
+	text-transform: uppercase;
+	letter-spacing: 2vw;
+}
+
+h2{
+	text-align: center;
+	color: #2E2E2E;
+	font-size: 4em;
+	padding: 2em;
+}
+
+.arrow{
+	padding-top: 6em;
+	padding-bottom: 3em;
+}
+
+.uxdText{
+	text-align: left;
+	color: #2E2E2E;
+	line-height: 2em;
+	font-size: 1.5em;
+	padding: 0px 5vw;
+}
+
+.uxdText a{
+	color: #3882DC;
+}
+
+.uxdText a:hover{
+	color: #97C6FF;
+}
+
+.quote{
+	text-align: center;
+	color: #2C4C8E;
+	line-height: 2em;
+	font-size: 1.5em;
+	display: inline-block;
+	padding: 1vw;
+}
+
+.quoteDiv{
+	text-align: center;
+	padding: 2vw 5vw;
+}
+
+.quoteMarkTop{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.quoteMarkBottom{
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.projectsHeading{
+	padding-bottom: 4vw;
+}
+
+.projectsHeading h2{
+	padding: 8vw 0px 1vw;
+}
+
+.projectsHeading p{
+	text-align: center;
+	color: #2E2E2E;
+	line-height: 2em;
+	font-size: 1.5em;
+}
+
+.flexcontainer{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 4vw;
+}
+
+.imageProject{
+	align-self: center;
+	width: 300px;
+	height: 300px;
+	padding: 5vw 1vw 1vw;
+}
+
+.projectTextRelated{
+	padding-bottom: 4em;
+}
+
+h3{
+	text-align: center;
+	color: #2E2E2E;
+	line-height: 2em;
+	font-size: 1.7em;
+	padding-top: 10px;
+}
+
+.categoryDesign{
+	text-align: center;
+	color: #009A03;
+	line-height: 2em;
+	font-size: 1.5em;
+}
+
+.categoryProgramming{
+	text-align: center;
+	color: #007AAD;
+	line-height: 2em;
+	font-size: 1.5em;
+}
+
+.projectText{
+	text-align: center;
+	color: #2E2E2E;
+	line-height: 2em;
+	font-size: 1.5em;
+}
+
+.projectLink{
+	text-align: center;
+	color: #3882DC;
+	line-height: 2em;
+}
+
+.projectLink:hover{
+	color: #97C6FF;
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    header{
+		grid-template-columns: repeat(1, 1 fr);
+		grid-template-rows: repeat(3, 1 fr);
+		grid-template-areas: 
+			"logo" 
+			"nav"
+			"intro";
+	}
+	
+	nav{
+		align-self: center;
+		text-align: center;
+		font-size: 1.2em;
+		padding: 2em 2em 0 2em;
+	}
+	
+	nav ul li{
+		display: inline-block;
+		padding: 0.5em;
+	}
+}
+
+@media only screen and (min-width: 1300px) {
+    
+	header{
+		grid-template-columns: repeat(2, 1 fr);
+		grid-template-rows: repeat(2, 1 fr);
+		grid-template-areas: 
+			"logo nav"
+			"intro intro";
+	}
+	
+	nav{
+		align-self: end;
+		text-align: right;
+		font-size: 1.2em;
+		padding: 2em 2em 0 2em;
+	}
+	
+	.LogoDiv{
+		align-self: flex-start;
+		text-align: left;
+		padding-left: 0px;
+	}
+	
+	.flexcontainer{
+		flex-direction: row;
+	}
+	
+	h3{
+		text-align: left;
+		padding-top: 50px;
+	}
+	
+	.projectTextRelated p{
+		text-align: left;
+	}
+	
+	.imageProject{
+		padding: 0px 1vw;
+	}
+	
+	.uxdText{
+		padding: 0 15vw;
+	}
+}

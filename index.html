@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tobias Stöwer - Home</title>
+		
+		<link rel="stylesheet" type="text/css" href="CSS/indexCSS.css">
+		
+		<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400" rel="stylesheet">
+	</head>
+
+	<body>
+		
+		<div class="maingrid">
+		
+			<header>
+				
+				<div class="LogoDiv">
+					<a href="index.html"><img class="logo" src="IMG/Icons/LogoVersion1_light.png" alt="Logo" height="80px" ></a>
+				</div>
+				
+				<div class="NavDiv">
+					<nav>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="uxd.html">UXD</a></li>
+							<li><a href="photography.html">Photography</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+				
+				<div class="headline">
+					
+					<h1>Hey There!</h1>
+					
+					<div class="arrow">
+						<a class="js-scroll-button"> <img src="IMG/Icons/Arrow.png" alt="Arrow Down" width="64px"></a>
+					</div>
+				</div>
+			
+			</header>
+			
+			<article id="article">
+				<div class="introduction">
+				<p class="introductionHeading">Welcome to my portfolio website!</p>
+				<p class="introductiontext">
+						I’m an UXD student and hobby photographer based in Bavaria (Germany). <br> <br>
+
+						On here you will find examples of my work and projects. <br>
+						Since I'm interested in different fields I decided to create dedicated pages for each one.<br></p>
+				</div>
+					
+				<div class="uxd">
+					<a href="uxd.html"><img class="uxIcon" src="IMG/Icons/UX-Icon.png" alt="UX Icon" width="179px"></a>
+					<a href="uxd.html"><h2 class="uxText"> User Experience Design</h2></a>
+				</div>
+
+
+				<div class="photography">
+					<a href="photography.html"><img class="photoIcon" src="IMG/Icons/Photography-Icon.png" alt="Photography Icon" width="179px">
+					<h2 class="photoText"> Photography</h2></a>
+				</div>
+
+				<p class="description">Please choose the topic which you are interested in.</p>
+
+			
+			</article>
+			
+			<footer class="footer">
+			
+				<p>&copy; 2018</p>
+			
+			</footer>
+		
+		</div>
+		
+		<script>
+			document.querySelector('.js-scroll-button').addEventListener('click', function(e) {
+        	e.preventDefault();
+        	document.querySelector('.introductionHeading').scrollIntoView({ behavior: 'smooth' });
+      		});
+		</script>
+		
+	</body>
+</html>
