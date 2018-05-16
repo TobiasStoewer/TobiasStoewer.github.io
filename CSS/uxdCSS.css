@@ -22,6 +22,14 @@
 
 header{
 	grid-area: header;
+	display: grid;
+	grid-template-columns: repeat(1, 1 fr);
+	grid-template-rows: repeat(3, 1 fr);
+	grid-template-areas: 
+		"logo" 
+		"nav"
+		"intro";
+	padding: 1em;
 	background-image: url(../IMG/Backgrounds/50.jpg);
 	background-size: cover;
 }
@@ -30,7 +38,7 @@ header{
 	grid-area: logo;
 	align-self: center;
 	text-align: center;
-	padding: 50px 0;
+	padding-right: 50px;
 }
 
 .navDiv{
@@ -45,8 +53,8 @@ header{
 article{
 	grid-area: article;
 	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: auto;
+	grid-template-columns: repeat(1, 1 fr);
+	grid-template-rows: repeat(3, 1 fr);
 	grid-template-areas: 
 		"descText"
 		"projectsHeading"
@@ -82,7 +90,8 @@ footer{
 
 nav{
 	text-align: center;
-	font-size: 3em;
+	font-size: 1.2em;
+	padding: 2em 2em 0 2em;
 }
 
 nav ul{
@@ -100,8 +109,7 @@ a{
 }
 
 nav ul li a:link {
-    color: white;
-	padding: 1vw;
+    color: white;  
 }
 
 nav ul li a:hover {
@@ -114,7 +122,7 @@ nav ul li a:active {
 
 
 h1{
-	font-size: 10vw;
+	font-size: 5vw;
 	font-weight: 200;
 	padding-top: 2.5em;
 	padding-bottom: 1em;
@@ -156,7 +164,7 @@ h2{
 	line-height: 2em;
 	font-size: 1.5em;
 	display: inline-block;
-	margin: 1vw;
+	padding: 1vw;
 }
 
 .quoteDiv{
@@ -199,11 +207,12 @@ h2{
 .imageProject{
 	align-self: center;
 	width: 300px;
-	margin: 5vw 1vw 1vw;
+	height: 300px;
+	padding: 5vw 1vw 1vw;
 }
 
 .projectTextRelated{
-	margin-bottom: 4em;
+	padding-bottom: 4em;
 }
 
 h3{
@@ -249,10 +258,10 @@ h3{
 
 
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 768px) {
     header{
-		grid-template-columns: auto;
-		grid-template-rows: auto;
+		grid-template-columns: repeat(1, 1 fr);
+		grid-template-rows: repeat(3, 1 fr);
 		grid-template-areas: 
 			"logo" 
 			"nav"
@@ -262,47 +271,37 @@ h3{
 	nav{
 		align-self: center;
 		text-align: center;
+		font-size: 1.2em;
 		padding: 2em 2em 0 2em;
-		font-size: 1.5em;
-	}
-	
-	h1{
-		font-size: 5vw;
 	}
 	
 	nav ul li{
 		display: inline-block;
 		padding: 0.5em;
 	}
-	
-	nav ul li a:link {
-		padding: auto;
-	}
 }
 
 @media only screen and (min-width: 1300px) {
     
 	header{
-		display: grid;
-		grid-template-columns: auto;
-		grid-template-rows: auto;
+		grid-template-columns: repeat(2, 1 fr);
+		grid-template-rows: repeat(2, 1 fr);
 		grid-template-areas: 
 			"logo nav"
 			"intro intro";
-		padding: 1em;
 	}
 	
 	nav{
 		align-self: end;
 		text-align: right;
-		padding: 2em 2em 0 2em;
 		font-size: 1.2em;
+		padding: 2em 2em 0 2em;
 	}
 	
 	.LogoDiv{
 		align-self: flex-start;
 		text-align: left;
-		padding: 0px;
+		padding-left: 0px;
 	}
 	
 	.flexcontainer{
@@ -319,7 +318,7 @@ h3{
 	}
 	
 	.imageProject{
-		margin: 0px 1vw;
+		padding: 0px 1vw;
 	}
 	
 	.uxdText{

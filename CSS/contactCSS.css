@@ -22,14 +22,6 @@
 
 header{
 	grid-area: header;
-	display: grid;
-	grid-template-columns: repeat(1, 1 fr);
-	grid-template-rows: repeat(3, 1 fr);
-	grid-template-areas: 
-		"logo" 
-		"nav"
-		"intro";
-	padding: 1em;
 	background-image: url(../IMG/Backgrounds/50.jpg);
 	background-size: cover;
 }
@@ -38,7 +30,7 @@ header{
 	grid-area: logo;
 	align-self: center;
 	text-align: center;
-	padding-right: 50px;
+	padding: 50px 0;
 }
 
 .navDiv{
@@ -70,8 +62,7 @@ footer{
 
 nav{
 	text-align: center;
-	font-size: 1.2em;
-	padding: 2em 2em 0 2em;
+	font-size: 3em;
 }
 
 nav ul{
@@ -90,7 +81,8 @@ a{
 }
 
 nav ul li a:link {
-    color: white;  
+    color: white; 
+	padding: 1vw;
 }
 
 nav ul li a:hover {
@@ -103,7 +95,7 @@ nav ul li a:active {
 
 
 h1{
-	font-size: 5vw;
+	font-size: 10vw;
 	font-weight: 200;
 	padding-top: 4em;
 	padding-bottom: 2em;
@@ -162,10 +154,10 @@ input[type=submit]:hover {
 
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
     header{
-		grid-template-columns: repeat(1, 1 fr);
-		grid-template-rows: repeat(3, 1 fr);
+		grid-template-columns: auto;
+		grid-template-rows: auto;
 		grid-template-areas: 
 			"logo" 
 			"nav"
@@ -175,13 +167,21 @@ input[type=submit]:hover {
 	nav{
 		align-self: center;
 		text-align: center;
-		font-size: 1.2em;
+		font-size: 1.5em;
 		padding: 2em 2em 0 2em;
 	}
 	
 	nav ul li{
 		display: inline-block;
 		padding: 0.5em;
+	}
+	
+	nav ul li a:link {
+		padding: auto;
+	}
+	
+	h1{
+		font-size: 5vw;
 	}
 	
 	.container {
@@ -192,24 +192,26 @@ input[type=submit]:hover {
 @media only screen and (min-width: 1300px) {
     
 	header{
-		grid-template-columns: repeat(2, 1 fr);
-		grid-template-rows: repeat(2, 1 fr);
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: auto;
 		grid-template-areas: 
 			"logo nav"
 			"intro intro";
+		padding: 1em;
 	}
 	
 	nav{
 		align-self: end;
 		text-align: right;
-		font-size: 1.2em;
 		padding: 2em 2em 0 2em;
+		font-size: 1.2em;
 	}
 	
 	.LogoDiv{
 		align-self: flex-start;
 		text-align: left;
-		padding-left: 0px;
+		padding: 0px;
 	}
 	
 	.container {
