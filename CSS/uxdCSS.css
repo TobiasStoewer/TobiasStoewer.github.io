@@ -206,7 +206,8 @@ h2{
 
 .imageProject{
 	align-self: center;
-	padding: 5vw 1vw 1vw;
+	width: 300px;
+	margin: 5vw 1vw 1vw;
 }
 
 .projectTextRelated{
