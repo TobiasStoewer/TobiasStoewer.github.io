@@ -145,43 +145,6 @@ h2{
 	padding: 0 5vw 5vw;
 }
 
-.buttonDesc{
-	text-align: center;
-	color: #2E2E2E;
-	line-height: 2em;
-	font-size: 1.5em;
-}
-
-.btn{
-	background-color: #BCBCBC; color: black;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-	border-radius: 12px;
-	-webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-}
-
-.btn:hover {
-    background-color: #D4D4D4;
-    color: rgba(white);
-}
-
-.btn.active {
-    background-color: #666;
-    color: white;
-}
-
-.buttons{
-	text-align: center;
-	padding: 3em;
-}
-
 .socialMedia img {
 	padding: 10px;
 }
