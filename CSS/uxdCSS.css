@@ -303,7 +303,7 @@ h3{
 	.LogoDiv{
 		align-self: flex-start;
 		text-align: left;
-		padding-left: 0px;
+		padding: 0px;
 	}
 	
 	.flexcontainer{
